@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,18 +22,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EVn-KM-OKu">
-                                <rect key="frame" x="134.33333333333331" y="94" width="145.33333333333331" height="467"/>
+                                <rect key="frame" x="92.5" y="54" width="229" height="738"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-h3-TAF">
-                                        <rect key="frame" x="0.0" y="0.0" width="145.33333333333334" height="145.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="229" height="236"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jl-jS-DKd">
-                                        <rect key="frame" x="0.0" y="160.66666666666669" width="145.33333333333334" height="145.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="251" width="229" height="236"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4Y-at-CB0">
-                                        <rect key="frame" x="0.0" y="321.33333333333331" width="145.33333333333334" height="145.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="502" width="229" height="236"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
@@ -44,20 +44,26 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHH-bQ-uOE">
-                                <rect key="frame" x="152" y="576" width="110" height="271"/>
+                                <rect key="frame" x="142" y="812" width="130" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="ARI-xV-hKm"/>
+                                    <constraint firstAttribute="height" constant="40" id="YIe-7K-KtC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Push The Buttom!"/>
+                                <state key="normal" title="Push The Buttom!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lHH-bQ-uOE" secondAttribute="bottom" constant="15" id="I11-hu-cJW"/>
                             <constraint firstItem="EVn-KM-OKu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OkY-F5-QgO"/>
                             <constraint firstItem="lHH-bQ-uOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y9k-DB-IGs"/>
-                            <constraint firstItem="lHH-bQ-uOE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="263.5" id="fLY-oe-b5K"/>
-                            <constraint firstItem="lHH-bQ-uOE" firstAttribute="top" secondItem="EVn-KM-OKu" secondAttribute="bottom" constant="15" id="gbF-Xa-9pd"/>
-                            <constraint firstItem="EVn-KM-OKu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="hTJ-8n-Oer"/>
+                            <constraint firstItem="lHH-bQ-uOE" firstAttribute="top" secondItem="EVn-KM-OKu" secondAttribute="bottom" constant="20" id="fLY-oe-b5K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lHH-bQ-uOE" secondAttribute="bottom" constant="10" id="fpU-of-aW6"/>
+                            <constraint firstItem="EVn-KM-OKu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hTJ-8n-Oer"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -69,6 +75,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
