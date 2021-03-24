@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
         pushButtomLabel.layer.cornerRadius = 10
         redLightLabel.layer.cornerRadius = 70
         yellowLightLabel.layer.cornerRadius = 70
@@ -46,7 +47,11 @@ class ViewController: UIViewController {
             redLightLabel.alpha = 1.0
             greenLightLabel.alpha = 0.3
             
-        } else { redLightLabel.alpha = 1.0 }
+        } else {
+            redLightLabel.alpha = 1.0
+            pushButtomLabel.setTitle("Next!", for: .normal)
+        }
+        
         }
         
     
