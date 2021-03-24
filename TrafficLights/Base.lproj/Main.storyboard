@@ -55,7 +55,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qU-nG-UmR"/>
+                                    <action selector="pushButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmm-bl-IeK"/>
                                 </connections>
                             </button>
                         </subviews>
