@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,18 +22,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EVn-KM-OKu">
-                                <rect key="frame" x="92.5" y="54" width="229" height="738"/>
+                                <rect key="frame" x="92.333333333333329" y="54" width="229.33333333333337" height="738"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-h3-TAF">
-                                        <rect key="frame" x="0.0" y="0.0" width="229" height="236"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="229.33333333333334" height="236"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jl-jS-DKd">
-                                        <rect key="frame" x="0.0" y="251" width="229" height="236"/>
+                                        <rect key="frame" x="0.0" y="251" width="229.33333333333334" height="236"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4Y-at-CB0">
-                                        <rect key="frame" x="0.0" y="502" width="229" height="236"/>
+                                        <rect key="frame" x="0.0" y="502" width="229.33333333333334" height="236"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
@@ -44,16 +44,19 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHH-bQ-uOE">
-                                <rect key="frame" x="142" y="812" width="130" height="40"/>
+                                <rect key="frame" x="152" y="812" width="110" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="ARI-xV-hKm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="ARI-xV-hKm"/>
                                     <constraint firstAttribute="height" constant="40" id="YIe-7K-KtC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Push The Buttom!">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qU-nG-UmR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,6 +69,12 @@
                             <constraint firstItem="EVn-KM-OKu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hTJ-8n-Oer"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightLabel" destination="f4Y-at-CB0" id="toE-U8-ytY"/>
+                        <outlet property="pushButtomLabel" destination="lHH-bQ-uOE" id="aCW-UQ-57X"/>
+                        <outlet property="redLightLabel" destination="bQF-h3-TAF" id="CeC-6q-hfK"/>
+                        <outlet property="yellowLightLabel" destination="2Jl-jS-DKd" id="CwC-36-ngz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
